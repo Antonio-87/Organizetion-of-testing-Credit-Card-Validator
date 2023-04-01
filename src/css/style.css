@@ -1,0 +1,182 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+
+.container {
+    width: 41.66666667%;
+}
+ 
+.container {
+    float: left;
+}
+.container, .col-md-6 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+div {
+    display: block;
+}
+
+
+h3 {
+    font-size: 1.3em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.cards {
+    margin: 10px 0;
+    height: 25px;
+}
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
+ul {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.cards li {
+    display: block;
+    float: left;
+}
+
+.card {
+    float: left;
+    width: 39px;
+    height: 25px;
+    text-indent: -9999px;
+    background-position: 0 0;
+    margin-right: 4px;
+}
+
+.card.visa {
+    background-image: url(../img/card-visa.gif);
+    opacity: 0.2;
+}
+
+.card.master {
+    background-image: url(https://www.validcreditcardnumber.com/static/img/card-mastercard.gif);
+    opacity: 0.2;
+}
+
+.card.amex {
+    background-image: url(https://www.validcreditcardnumber.com/static/img/card-amex.gif);
+    opacity: 0.2;
+}
+
+.card.discover {
+    background-image: url(https://www.validcreditcardnumber.com/static/img/card-discover.gif);
+    opacity: 0.2;
+}
+
+.card.jcb {
+    background-image: url(https://www.validcreditcardnumber.com/static/img/card-jcb.gif);
+    opacity: 0.2;
+}
+
+.card.diners_club {
+    background-image: url(https://www.validcreditcardnumber.com/static/img/card-diners.gif
+    );
+    opacity: 0.2;
+}
+
+form {
+    display: block;
+    margin-top: 0em;
+}
+
+.form-inline .form-group {
+    display: inline-block;
+    width: auto;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+
+.input {
+    font-family: inherit;
+    margin: 0;
+    font: inherit;
+    position: relative;
+    min-height: 1px;
+    float: left;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(47, 15, 15, 0.075);
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.input:focus {
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+}
+
+.submit {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-left: 10px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.visible {
+    opacity: 1;
+}
