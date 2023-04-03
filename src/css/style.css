@@ -141,6 +141,22 @@ form {
     transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 }
 
+.tooltip-inner {
+    display: none;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.42857143;
+    box-sizing: border-box;
+    max-width: 200px;
+    padding: 3px 8px;
+    color: #fff;
+    text-align: center;
+    background-color: #000;
+    border-radius: 4px;
+}
+
 .input:focus {
     border-color: #66afe9;
     outline: 0;
@@ -179,4 +195,8 @@ a {
 
 .visible {
     opacity: 1;
+}
+
+.popup {
+    display: block;
 }
