@@ -1,4 +1,6 @@
 import issuers from "./issuers";
+import "../img/card-amex.gif";
+import "../img/card-diners.gif";
 
 export default class Cards {
   constructor(parentEl) {
@@ -14,11 +16,8 @@ export default class Cards {
   }
 
   bindToDOM() {
-    for (const [key, value] of Object.entries(issuers)) {
+    for (const key of issuers) {
       this.parentEl.insertAdjacentHTML("beforeend", this.markup(key));
-      document
-        .querySelector(`.${key.toLowerCase()}`)
-        .setAttribute("style", `background-image: ${value}; opacity: 0.2`);
     }
   }
 }

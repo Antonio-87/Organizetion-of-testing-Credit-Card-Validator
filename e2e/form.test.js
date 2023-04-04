@@ -5,6 +5,7 @@ describe("Inn Form", () => {
   let page;
 
   beforeEach(async () => {
+    jest.setTimeout(30000);
     browser = await puppeteer.launch({
       headless: false,
       slowMo: 100,
@@ -16,6 +17,7 @@ describe("Inn Form", () => {
 
   // eslint-disable-next-line jest/expect-expect
   test("Form should render on page start", async () => {
+    jest.setTimeout(30000);
     await page.goto("http://localhost:9000");
 
     await page.waitFor(".form-inline");
@@ -23,7 +25,7 @@ describe("Inn Form", () => {
 
   // eslint-disable-next-line jest/expect-expect
   test("Form input should add .valid class if inn is valid", async () => {
-    jest.setTimeout(20000);
+    jest.setTimeout(30000);
     await page.goto("http://localhost:9000");
 
     await page.waitFor(".form-inline");
@@ -32,7 +34,7 @@ describe("Inn Form", () => {
     const input = await form.$(".input");
     const submit = await form.$(".submit");
 
-    await input.type("7715964180");
+    await input.type("4556483972123366");
     await submit.click();
 
     await page.waitFor(".form-inline .input.valid");

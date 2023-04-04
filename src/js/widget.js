@@ -1,4 +1,5 @@
 import { isValidInn } from "./validators";
+import { cardType } from "./card-type";
 
 export default class InnFormWidget {
   constructor(parentEl) {
@@ -70,6 +71,15 @@ export default class InnFormWidget {
     e.preventDefault();
 
     const value = this.input.value;
+
     this.tooltip.classList.remove("popup");
+    const name = cardType(value);
+    const activCard = document.querySelector(".visible");
+
+    if (value === "" && activCard) activCard.classList.remove("visible");
+
+    if (name !== "unknown") {
+      document.querySelector(`.${name}`).classList.add("visible");
+    }
   }
 }
